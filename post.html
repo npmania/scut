@@ -1,0 +1,7 @@
+<html>
+	<body onload="document.forms['post'].submit()">
+		<form name="post" action="{{ .url }}" method="post">
+			<input type="hidden" name="{{ .key }}" value="{{ .value }}">
+		</form>
+	</body>
+</html>
